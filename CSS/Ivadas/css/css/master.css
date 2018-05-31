@@ -1,0 +1,77 @@
+h1{
+  background-color: grey;
+}
+#TURINYS{
+  color:pink;
+}
+ul.menu{list-style-type: none;color:red;}
+
+
+h1.pirmas{
+  color:green;
+}
+h1.antras{
+  color:blue;
+/* pszr kaip kalima fonui uzdeti opacity */
+}
+p.pirmas{
+  color:red;
+  letter-spacing: 3pt;
+  text-indent: 10px;
+  text-shadow: 1px 1px black;
+
+}
+p.pirmas::first-letter{
+  color:grey;
+  font-size: 30pt;
+
+}
+
+ul.trecias{
+  list-style-type: circle;
+
+}
+span{
+  background-color: yellow;
+  border-style: solid;
+  border-color: brown;
+  word-spacing: 10
+
+}
+[class]{background-color: none;
+}
+
+[required]{background-color: pink;
+}
+table{
+  width: 90%;
+}
+input[type="text"]{
+  width: 100%;
+}
+
+[class$="as"]{background-color: violet;
+}
+
+
+a:hover{
+  background-color: green;
+}
+/* su tarpu eini gilyn i elementa  */
+ul.menu li {
+  display: inline;
+}
+ul.menu li a{
+  text-decoration: none;
+  color: grey;
+  text-transform: uppercase;
+}
+table tr:first-child{background-color: red;}
+
+un li:nth-child(2n+1){background-color: blue;}
+
+a:active{background-color: green;}
+
+
+table tr:first-child{background-color: red;
+}

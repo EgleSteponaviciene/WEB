@@ -1,0 +1,29 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: auto;
+  height: 500px;
+  /* align-items: center; */
+  /* align-tiems:center; */
+  background-color: red;
+  justify-content: center;
+}
+
+
+[class^="item"]{
+  /* flex: 30%; */
+  border: 1 px solid black;
+/*  height: 50px; */
+  width: 200px;
+  /* width: */
+}
+.item1{
+  flex: 100px;
+}
+.item2{
+  flex: 50px;
+}
+.item3{
+  flex: 10px;
+}

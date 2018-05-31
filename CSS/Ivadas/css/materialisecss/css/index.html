@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <style media="screen">
+      figure{
+        width: 200px;
+        float:left;
+        margin: 10px;
+      }
+
+      .article{
+        width: 100%;
+      }
+/*       article{margin: 10px;
+      padding: 10px; */
+
+      .item{
+        margin: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        min-height: 450px;
+      }
+
+      div.item img{
+        width: 100%
+      }
+    </style>
+
+  </head>
+  <body>
+    <nav class="orange darkened-4">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">edit</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Pagrindinis</a></li>
+          <li><a href="offers.html">Pasiulymai</a></li>
+          <li><a href="about.html">Apie</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Pagrindinis</a></li>
+      <li><a href="offers.html">Pasiulymai</a></li>
+      <li><a href="about.html">Apie</a></li>
+    </ul>
+
+      <div class="row container">
+        <h2 class="header">Parallax</h2>
+        <figure>
+          <img  class="article" src="images/offers/chess.jpg" alt="">
+        </figure>
+        <p class="grey-text text-darken-3 lighten-3">
+          Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="images/front/work.jpg"></div>
+    </div>
+    <div class="row container">
+      <h2 class="header">Parallax 2</h2>
+      <article class="col s12 m12 l6">
+        <div class="item">
+          <img src="images/offers/jump.jpg" alt="">
+          <table>
+            <tr>
+              <th>Aprasymas</th>
+              <td>Pasisokinejimas</td>
+            </tr>
+            <tr>
+              <th>Kaina</th>
+              <td>50 &euro;</td>
+            </tr>
+            <tr>
+              <th>Vieta</th>
+              <td>Vingio parkas</td>
+            </tr>
+            <tr>
+              <th>Data</th>
+              <td>2018-05-30</td>
+            </tr>
+          </table>
+        </div>
+      </article>
+      <article class="col s12 m12 l6">
+        <div class="item">
+          2
+        </div>
+      </article>
+      <article class="col s12 m12 l6">
+        <div class="item">
+          3
+        </div>
+      </article>
+      <article class="col s12 m12 l6">
+        <div class="item">
+          4
+        </div>
+      </article>
+      <article class="col s12 m12 l6">
+        <div class="item">
+          5
+        </div>
+      </article>
+      <article class="col s12 m12 l6">
+        <div class="item">
+          6
+        </div>
+      </article>
+    </div>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="images/front/beach.jpg"></div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<script type="text/javascript">
+// meniu aktyvacijai
+document.addEventListener('DOMContentLoaded', function() {
+ var elems = document.querySelectorAll('.sidenav');
+ var instances = M.Sidenav.init(elems);
+});
+// parallax aktyvacijai
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, {responsiveTreshold:600});
+  });
+</script>
+</body>
+
+</html>
